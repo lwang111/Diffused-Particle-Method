@@ -1,6 +1,24 @@
 function [G] = Gxx(r1,r2)
-% Ref.: https://journals.aps.org/prb/pdf/10.1103/PhysRevB.82.045404
-% This function calculates the xx component of the 3D Green's function, * 4*pi*k0^2.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% calculates the xx component of the 3D Green's function * 4*pi*k0^2
+%
+% Ref: https://journals.aps.org/prb/pdf/10.1103/PhysRevB.82.045404
+%
+% Lang Wang, 2020
+% -------------------------------------------------------------------------
+%                              INPUTS
+%
+% rs             -> 3D location of the source
+% rt             -> 3D location of the observing point
+%
+% -------------------------------------------------------------------------
+%                              OUTPUTS
+%
+% G              -> value of the xx component of the Green's function
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 k0 = 2*pi;
 
 R    = r1 - r2;

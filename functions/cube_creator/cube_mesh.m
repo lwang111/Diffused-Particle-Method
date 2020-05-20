@@ -1,5 +1,24 @@
 function [ r ] = cube_mesh(ax, ay, az, dr)
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% generates 3D mesh in a cube
+%
+% Lang Wang, 2020
+% -------------------------------------------------------------------------
+%                              INPUTS
+%
+% ax             -> side length in x
+% ay             -> side length in y
+% az             -> side length in z
+% dr             -> distance between neighbor mesh nodes
+%
+% -------------------------------------------------------------------------
+%                              OUTPUTS
+%
+% r              -> 3D locations of mesh nodes
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 x= (-ax/2+dr/2):dr:(ax/2-dr/2);
 y= (-ay/2+dr/2):dr:(ay/2-dr/2);
 z= (-az/2+dr/2):dr:(az/2-dr/2);
